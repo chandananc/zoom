@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+  
+<%= zoom_image_tag(@zoom.image_url :id => "my_image") %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @zoom.name %>
+</p>
+
+
+
+<%= link_to 'Edit', edit_zoom_path(@zoom) %> |
+<%= link_to 'Back', zooms_path %>
